@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//PT-BR">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+    <title>WhatsApp Selection</title>
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//PT-BR">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+    <title>WhatsApp Selection</title>
+    <style>
+   body {
+            background:black;
+            color:white;
+        }
+        h1{
+            display:flex;
+            flex-direction:rows;
+            justify-content:center;
+        }
+        /* Estilos para os checkboxes */
+        input[type=checkbox] {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: black;
+            color: red;
+            margin-right: 5px;
+            border: none;
+            vertical-align: middle;
+        }
+        /* Estilos para os radios */
+        input[type=radio] {
+            display: none; 
+            cursor: pointer;
+           }
+        
+            
+        label {
+            display: inline-block;
+            text-align: center;
+            width: 40px; 
+            border :1px solid red;
+            border-radius:15px;
+            cursor: pointer;
+            }
+            /* Largura dos labels */
+             /* Adiciona cursor ao passar por cima */
+        
+        label:focus{
+            background:green;
+            color:white;
+        }
+        /* Estilos para o botão */
+        button {
+            display:flex;
+            flex-direction:rows;
+            justify-content:center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left:100px;
+        }
+        
+        
+        /* Estilos para o input de valor */
+        #valor {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            margin-left:40px;
+            width:30%;
+        }
+        /* Estilos para o input de nome */
+        input[type=text] {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-left: 30px;
+            width:40%;
+        }
+        #checkboxCounter{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+        
+        }
+        .qtd {
+            display:flex;
+            flex-direction:rows;
+           justify-content:center;
+        }
+        .extra:focus{
+            background:gold;
+            color:black;
+        }
+     .loto:focus{
+         background:gold;
+            color:black;
+     }
+     #content{
+         background:red;
+         color:black;
+         font-Weight:bold;
+         margin-left:3px auto;
+         padding:0
+         margin-bottom:5px;
+         border-radius:10px;
+     }
+     
+    </style>
+</head>
+<body>
+<h1> Lotinha</h1>
+   <div id="checkboxCounter">0 selecionado(s)</div>
+    <br>
+    <form id="lotteryForm">
+    <div id="content">
+    <!-- Your existing HTML content -->
+    
+        <!-- Your checkbox inputs -->
+        <input type="checkbox" name="lotinha-Dz-01" value="01"> 01
+        <input type="checkbox" name="lotinha-Dz-02" value="02"> 02
+         <input type="checkbox" name="lotinha-Dz-03" value="01"> 03
+        <input type="checkbox" name="lotinha-Dz-04" value="04"> 04
+        <input type="checkbox" name="lotinha-Dz-05" value="05"> 05
+        <input type="checkbox" name="lotinha-Dz-06" value="06"> 06
+         <input type="checkbox" name="lotinha-Dz-07" value="07"> 07
+        <input type="checkbox" name="lotinha-Dz-08" value="08"> 08
+         <input type="checkbox" name="lotinha-Dz-09" value="09"> 09
+        <input type="checkbox" name="lotinha-Dz-10" value="10"> 10
+         <input type="checkbox" name="lotinha-Dz-11" value="11"> 11
+        <input type="checkbox" name="lotinha-Dz-12" value="12"> 12
+        <input type="checkbox" name="lotinha-Dz-13" value="13"> 13
+        <input type="checkbox" name="lotinha-Dz-14" value="14"> 14
+         <input type="checkbox" name="lotinha-Dz-15" value="15"> 15
+        <input type="checkbox" name="lotinha-Dz-16" value="16"> 16
+          <input type="checkbox" name="lotinha-Dz-17" value="17"> 17
+        <input type="checkbox" name="lotinha-Dz-18" value="18"> 18
+         <input type="checkbox" name="lotinha-Dz-19" value="19"> 19
+        <input type="checkbox" name="lotinha-Dz-20" value="20"> 20
+        <input type="checkbox" name="lotinha-Dz-21" value="21"> 21
+        <input type="checkbox" name="lotinha-Dz-22" value="22"> 22
+         <input type="checkbox" name="lotinha-Dz-23" value="23"> 23
+        <input type="checkbox" name="lotinha-Dz-24" value="24"> 24
+         <input type="checkbox" name="lotinha-Dz-25" value="25"> 25
+         </div>
+           <div class="qtd">QUANTIDADE DE DEZENAS </div>
+    <!-- Seus inputs de radio -->
+     <input class="loto"id="pegar7000" type="radio" name="multiplier" value="7000"> <label for="pegar7000">17</label>
+    <input id="pegar1300" type="radio" name="multiplier" value="1300"> <label for="pegar1300">18</label>
+    <input id="pegar600" type="radio" name="multiplier" value="600"> <label for="pegar600">19</label>
+    <input id="pegar100" type="radio" name="multiplier" value="100"> <label for="pegar100">20</label>
+    <input id="pegar30" type="radio" name="multiplier" value="30"> <label for="pegar30">21</label>
+    <input id="pegar10" type="radio" name="multiplier" value="10"> <label for="pegar10">22</label>
+    <input id="pegar5" type="radio" name="multiplier" value="5"> <label for="pegar5">23</label>
+    <!-- Adicione os outros inputs de radio aqui -->
+    <br><br>
+    <div>
+      <div class="qtd">PROXIMAS EXTRACAO </div><br>
+        <input class="extra" type="button" value="07:15" onclick="setExtraValue(this)">
+        <input class="extra" type="button" value="08:15" onclick="setExtraValue(this)">
+        <input class="extra" type="button" value="09:15" onclick="setExtraValue(this)">
+        <input class="extra" type="button" value="10:15" onclick="setExtraValue(this)">
+        <input class="extra" type="button" value="11:15" onclick="setExtraValue(this)">
+        <input class="extra" type="button" value="12:15" onclick="setExtraValue(this)">
+        <input class="extra" type="button" value="13:15" onclick="setExtraValue(this)">
+        <input class="extra" type="button" value="14:15" onclick="setExtraValue(this)">
+        <input class="extra" type="button" value="15:15" onclick="setExtraValue(this)">
+        <input class="extra" type="button" value="16:15" onclick="setExtraValue(this)">   
+        <input class="extra" type="button" value="17:15" onclick="setExtraValue(this)">
+        <input class="extra" type="button" value="18:15" onclick="setExtraValue(this)">
+          <input class="extra" type="button" value="19:15" onclick="setExtraValue(this)">
+        <input style="background:green;"class="extra" type="button" value="20:00" onclick="setExtraValue(this)">
+        <input class="extra" type="button" value="20:15" onclick="setExtraValue(this)">    
+        <input class="extra" type="button" value="21:15" onclick="setExtraValue(this)"> 
+        <input class="extra" type="button" value="22:15" onclick="setExtraValue(this)">                    
+    </div>
+    <!-- Campo de valor -->
+    <input maxlength="5" id="valor" type="tel" name="valor" placeholder="R$" autocomplete="off">
+    <!-- Campo de nome -->
+    <input type="text" name="NOME" required placeholder="Nome">
+    <br><br>
+    <!-- Botão para enviar via WhatsApp -->
+    <button type="button" onclick="sendViaWhatsApp()">Enviar via WhatsApp</button>
+</form>
+
+<script>
+      var extraValue = ""; // Variável global para armazenar o valor extra selecionado
+
+    function setExtraValue(button) {
+        extraValue = button.value;
+        var buttons = document.querySelectorAll('.extra');
+        buttons.forEach(function(btn) {
+            btn.classList.remove('selected');
+        });
+        button.style.fontWeight = 'bold';
+    }
+
+
+        
+    function sendViaWhatsApp() {
+        var valorInput = parseFloat(document.getElementById("valor").value || 0);
+        var selectedNumbers = [];
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+        
+        checkboxes.forEach(function(checkbox) {
+            selectedNumbers.push(checkbox.value);
+        });
+        
+        var multiplierInput = document.querySelector('input[name="multiplier"]:checked');
+        var multiplier = parseFloat(multiplierInput ? multiplierInput.value : 1);
+        var multipliedValue = valorInput * multiplier;
+        var nomeInput = document.getElementsByName("NOME")[0].value;
+        var totalSelected = checkboxes.length;
+
+        // Obter a data e hora atuais
+        var now = new Date();
+        var date = now.toLocaleDateString();
+        var time = now.toLocaleTimeString();
+
+        // Criar a mensagem com o valor digitado no input "valor", as dezenas selecionadas, o total multiplicado, o nome, a quantidade de dezenas selecionadas, a data e hora atuais e o valor extra selecionado
+                                var message ="\n\nhttps://multijogo-38.webnode.page/lotinha/"
+                        message+= "        \n\n                 *LOTINHA MULTIJOGO*"
+       
+        message += "\n\n *Dezenas Selecionadas* : " + selectedNumbers.join(", ");
+  
+        message += "\n\n                   *Qtd de dezenas* : " + totalSelected;
+        
+         message+= "\n\n               *VALOR A PAGAR* : R$" + valorInput.toFixed(2);
+         
+        message += "\n\n         *TOTAL A RECEBER* : R$ " + multipliedValue.toFixed(2);
+        
+       message += "\n\n                             *Nome* : " + nomeInput;
+        
+        message += "      \n\n         Data: " + date;   
+       
+        message += "      Hora: " + time;
+       
+        message += "\n\n                       *EXTRACAO* : " + extraValue;
+
+        var whatsappLink = "https://wa.me/?text=" + encodeURIComponent(message);
+
+        window.open(whatsappLink, '_blank');
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var radios = document.querySelectorAll('input[type="radio"]');
+
+        checkboxes.forEach(function(checkbox) {
+            checkbox.addEventListener('change', function() {
+                var totalChecked = document.querySelectorAll('input[type="checkbox"]:checked').length;
+                checkboxCounter.textContent = totalChecked + " checkbox(es) selecionado(s)";
+            });
+        });
+
+        radios.forEach(function(radio) {
+            radio.addEventListener('change', function() {
+                var value = parseFloat(this.value);
+                checkboxes.forEach(function(checkbox, index) {
+                    checkbox.disabled = index >= value;
+                    checkbox.checked = index < value && checkbox.disabled ? true : checkbox.checked;
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>
