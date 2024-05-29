@@ -145,7 +145,7 @@
    <div id="checkboxCounter">0 selecionado(s)</div>
     <br>
     <form id="lotteryForm">
-    <div id="content">
+,,    <div id="content">
     <!-- Your existing HTML content -->
     
         <!-- Your checkbox inputs -->
@@ -259,7 +259,7 @@
   
         message += "\n\n                   *Qtd de dezenas* : " + totalSelected;
         
-         message+= "\n\n               *VALOR A PAGAR* : R$" + valorInput.toFixed(2);
+         message+= "\n\n               *VALOR A PAGAR* : R$ " + valorInput.toFixed(2);
          
         message += "\n\n         *TOTAL A RECEBER* : R$ " + multipliedValue.toFixed(2);
         
@@ -270,6 +270,10 @@
         message += "      Hora: " + time;
        
         message += "\n\n                       *EXTRACAO* : " + extraValue;
+
+  message +="\n\n                        *RESULTADO* : "
+
+ message += "\nhttps://www.divertidu.com/lotinha#resultados";
 
         var whatsappLink = "https://wa.me/?text=" + encodeURIComponent(message);
 
