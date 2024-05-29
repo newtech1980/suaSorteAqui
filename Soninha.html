@@ -25,6 +25,7 @@
             
             display: none;
             width: 30px;
+            
             height: 30px;
             border-radius: 50%;
             background: black;
@@ -45,6 +46,7 @@
             display: inline-block;
             text-align: center;
             width: 40px; 
+            margin:2px;
             border :1px solid red;
             border-radius:15px;
             cursor: pointer;
@@ -52,8 +54,8 @@
             }
            
         
-        label:focus{
-            background:green;
+        label:hover{
+            background:black;
             color:white;
         }
         /* Estilos para o botão */
@@ -376,6 +378,7 @@
         <input id="pegar60"type="checkbox" name="lotinha-Dz-10" value="60">
         
          </div>
+         <div>
            <div class="qtd">QUANTIDADE DE DEZENAS </div>
     <!-- Seus inputs de radio -->
      <input class="loto"id="pegar30000" type="radio" name="multiplier" value="30000"> <label for="pegar30000">10</label>
@@ -402,14 +405,14 @@
     
     <input id="pegar150" type="radio" name="multiplier" value="150"> <label for="pegar150">25</label>
     
-    <input id="pegar48" type="radio" name="multiplier" value="48"> <label for="pegar48">30</label>
+    <input id="pegar148" type="radio" name="multiplier" value="48"> <label for="pegar148">30</label>
     
-    <input id="pegar18" type="radio" name="multiplier" value="18"> <label for="pegar18">35</label>
+    <input id="pegar118" type="radio" name="multiplier" value="18"> <label for="pegar118">35</label>
     
-      <input id="pegar8" type="radio" name="multiplier" value="8"> <label for="pegar8">40</label>
+      <input id="pegar811" type="radio" name="multiplier" value="8"> <label for="pegar811">40</label>
     <!-- Adicione os outros inputs de radio aqui -->
-   
-    <div>
+   </div>
+    <div class=>
       <div class="qtd">PROXIMAS EXTRACAO </div>
         <input class="extra" type="button" value="07:35" onclick="setExtraValue(this)">
         <input class="extra" type="button" value="08:35" onclick="setExtraValue(this)">
@@ -447,7 +450,7 @@
         buttons.forEach(function(btn) {
             btn.classList.remove('selected');
         });
-        button.style.fontWeight = 'bold';
+        button.style.background = 'red';
     }
 
 
