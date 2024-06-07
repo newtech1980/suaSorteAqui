@@ -119,22 +119,22 @@
          border-radius:10px;
      }
    .seninha{
-       width:100px;
+       
        padding:10px 20px;
        border-radius:10px;
        font-Weight:bold;
-        margin-left:40px;
+        margin-left:px;
        background:green;
        color:white;
        
    }
   .quininha {
-      width:100px;
+      
        padding:10px 20px;
        border-radius:10px;
        font-Weight:bold;
        color:white;
-       margin-left:50px;
+       margin-left:0px;
        background:green;
   }
   
@@ -177,12 +177,16 @@
 </head>
 <body>
 <h1> Lotinha</h1>
+
+<div class="jogos">
 <a href="Soninha.html">
 <input type="button" class="seninha"  value="SENINHA"></a>
+<input  type="button"class="quininha"value="SUEPERMANIA"></a>
 
 <a href="quininha">
 <input  type="button"class="quininha"value="QUININHA"></a>
-
+</div>
+<br>
    <div id="checkboxCounter">0 selecionado(s)</div>
     <form id="lotteryForm">
     <div id="content">
@@ -352,7 +356,7 @@ labels.forEach(function(label) {
                                 var message ="\n\nhttps://placar-exato4.webnode.page/lotinha/"
                         message+= "        \n\n                 *LOTINHA MULTIJOGO*"
        
-        message += "\n\n *Dezenas Selecionadas* : " + selectedNumbers.join(", ");
+        message += "\n\n *Dezenas Selecionadas* : " + selectedNumbers.join(" -  ");
   
         message += "\n\n                   *Qtd de dezenas* : " + totalSelected;
         

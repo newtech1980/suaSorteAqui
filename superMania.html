@@ -8,7 +8,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-    <title>Lotinha</title>
+    <title>supermania</title>
   <style>
    body {
             background:teal;
@@ -100,16 +100,20 @@
            justify-content:center;
         }
         .extra {
-            margin:2px;
+            margin-left:120px;
+            width:30%;
+            border-radius:10px;
+            outline:none;
+            
         }
-        .extra:focus{
+        .extra:focus,hover{
             background:gold;
             color:black;
         }
    
      #content{
          width:100%;
-         height:300px;
+         height:400px;
          background:blue;
          color:black;
          font-Weight:bold;
@@ -134,7 +138,7 @@
        border-radius:10px;
        font-Weight:bold;
        color:white;
-       margin-left:2px;
+       margin-left:0px;
        background:green;
   }
   
@@ -151,15 +155,12 @@
             cursor: pointer;
             margin:3px;
   }
-  .nume:hover{
+  .nume:hover,focus{
       background:red;
       color:red;
       checked:true;
   }
-  .nume:focus{
-      background:red;
-      color:red;
-  }
+  
   label.selected {
             background: red;
         }
@@ -170,28 +171,28 @@
      #checkboxCounter{
          background:red;
          margin-bottom:3px;
+         color:white;
+         font-Weight:bold;
      }
-     .jogos{
-         display:inline-block;
-         
-     }
+  .putta:hover{
+      background:red;
+      color:red;
+      checked:true;
+  }
     </style>
 </head>
 <body>
+<h1>SUPERMANIA</h1>
 
-<h1> QUININHA</h1>
 <div class="jogos">
 <a href="LOTINHA.html">
 <input type="button" class="seninha"  value="LOTINHA"></a>
 
-<a href="superMania.html">
-<input  type="button"class="quininha"value="SUEPERMANIA"></a>
-
-
+<a href="quininha.html">
+<input  type="button"class="quininha"value="QUININHA "></a>
 <a href="Soninha.html">
 <input  type="button"class="quininha"value="SENINHA"></a>
-</div>
-
+</div><br>
    <div id="checkboxCounter">0 selecionado(s)</div>
     
     <form id="lotteryForm">
@@ -443,59 +444,93 @@
          
          
          
+         
+         
+         
+           <label class="nume" for="pegar81">81</label>
+         <input id="pegar81"type="checkbox" name="lotinha-Dz-11" value="81">
+         
+            <label class="nume" for="pegar82">82</label>
+        <input id="pegar82"type="checkbox" name="lotinha-Dz-12" value="82">
+           
+           <label class="nume" for="pegar83">83</label>
+        <input id="pegar83"type="checkbox" name="lotinha-Dz-13" value="83">
+           
+           <label class="nume" for="pegar84">84</label>
+        <input id="pegar84"type="checkbox" name="lotinha-Dz-14" value="84">
+        
+           <label class="nume" for="pegar85">85</label>
+         <input id="pegar85"type="checkbox" name="lotinha-Dz-15" value="85">
+         
+            <label class="nume" for="pegar86">86</label>
+        <input id="pegar86"type="checkbox" name="lotinha-Dz-16" value="86">
+        
+           <label class="nume" for="pegar87">87</label>
+          <input id="pegar87"type="checkbox" name="lotinha-Dz-17" value="87">
+          
+            <label class="nume" for="pegar88">88</label> 
+        <input id="pegar88"type="checkbox" name="lotinha-Dz-18" value="88">
+        
+           <label class="nume" for="pegar89">89</label>
+         <input id="pegar89"type="checkbox" name="lotinha-Dz-19" value="89">
+            <label class="nume" for="pegar90">90</label>
+        <input id="pegar90"type="checkbox" name="lotinha-Dz-20" value="90">
+        
+          <label class="nume" for="pegar91">91</label> 
+        <input id="pegar91"type="checkbox" name="lotinha-Dz-21" value="91">
+        
+           <label class="nume" for="pegar92">92</label>
+        <input id="pegar92"type="checkbox" name="lotinha-Dz-22" value="92">
+        
+           <label class="nume" for="pegar93">93</label>
+         <input id="pegar93"type="checkbox" name="lotinha-Dz-23" value="93">
+         
+           <label class="nume" for="pegar94">94</label> 
+        <input id="pegar94"type="checkbox" name="lotinha-Dz-24" value="94">
+        
+          <label class="nume" for="pegar95">95</label> 
+         <input id="pegar95"type="checkbox" name="lotinha-Dz-25" value="95">
+         
+             <label class="nume" for="pegar96">96</label> 
+        <input id="pegar96"type="checkbox" name="lotinha-Dz-21" value="96">
+        
+           <label class="nume" for="pegar97">97</label>
+        <input id="pegar97"type="checkbox" name="lotinha-Dz-22" value="97">
+        
+           <label class="nume" for="pegar98">98</label>
+         <input id="pegar98"type="checkbox" name="lotinha-Dz-23" value="98">
+         
+           <label class="nume" for="pegar99">99</label> 
+        <input id="pegar99"type="checkbox" name="lotinha-Dz-24" value="99">
+        
+          <label class="nume" for="pegar00">00</label> 
+         <input id="pegar00"type="checkbox" name="lotinha-Dz-25" value="00">
+         
+         
          </div>
            <div class="qtd">QUANTIDADE DE DEZENAS </div>
     <!-- Seus inputs de radio -->
-     <input class="loto"id="pegar15000" type="radio" name="multiplier" value="15000"> <label for="pegar15000">10</label>
+     <input class="loto"id="pegar30000" type="radio" name="multiplier" value="30000"> <label for="pegar30000">60</label>
      
-    <input id="pegar12000" type="radio" name="multiplier" value="12000"> <label for="pegar12000">11</label>
+    <input id="pegar4000" type="radio" name="multiplier" value="4000"> <label for="pegar4000">65</label>
     
-    <input id="pegar10000" type="radio" name="multiplier" value="10000"> <label for="pegar10000">12</label>
+    <input id="pegar500" type="radio" name="multiplier" value="500"> <label for="pegar500">70</label>
     
-    <input id="pegar8000" type="radio" name="multiplier" value="8000"> <label for="pegar8000">13</label>
+    <input id="pegar80" type="radio" name="multiplier" value="150"> <label for="pegar8000">75</label>
     
-    <input id="pegar6000" type="radio" name="multiplier" value="6000"> <label for="pegar6000">14</label>
+    <input id="pegar6000" type="radio" name="multiplier" value="35"> <label for="pegar6000">80</label>
     
-    <input id="pegar4000" type="radio" name="multiplier" value="4000"> <label for="pegar4000">15</label>
+    <input class="putta"id="pegar4000" type="radio" name="multiplier" value="5"> <label for="pegar4000">85</label>
     
-    <input id="pegar2500" type="radio" name="multiplier" value="2500"> <label for="pegar2500">16</label>
-  
-      <input class="loto"id="pegar2000" type="radio" name="multiplier" value="2000"> <label for="pegar2000">17</label>
-      
-    <input id="pegar1400" type="radio" name="multiplier" value="1400"> <label for="pegar1400">18</label>
-    
-    <input id="pegar1100" type="radio" name="multiplier" value="1100"> <label for="pegar1100">19</label>
-    
-    <input id="pegar850" type="radio" name="multiplier" value="850"> <label for="pegar850">20</label>
-    
-    <input id="pegar230" type="radio" name="multiplier" value="230"> <label for="pegar230">25</label>
-    
-    <input id="pegar90" type="radio" name="multiplier" value="90"> <label for="pegar90">30</label>
-    
-    <input id="pegar40" type="radio" name="multiplier" value="40"> <label for="pegar40">35</label>
-    
+   
 
     <!-- Adicione os outros inputs de radio aqui -->
   
     <div>
       <div class="qtd">PROXIMAS EXTRACAO </div><br>
-        <input class="extra" type="button" value="07:55" onclick="setExtraValue(this)">
-        <input class="extra" type="button" value="08:55" onclick="setExtraValue(this)">
-        <input class="extra" type="button" value="09:55" onclick="setExtraValue(this)">
-        <input class="extra" type="button" value="10:55" onclick="setExtraValue(this)">
-        <input class="extra" type="button" value="11:55" onclick="setExtraValue(this)">
-        <input class="extra" type="button" value="12:55" onclick="setExtraValue(this)">
-        <input class="extra" type="button" value="13:55" onclick="setExtraValue(this)">
-        <input class="extra" type="button" value="14:55" onclick="setExtraValue(this)">
-        <input class="extra" type="button" value="15:55" onclick="setExtraValue(this)">
-        <input class="extra" type="button" value="16:55" onclick="setExtraValue(this)">   
-        <input class="extra" type="button" value="17:55" onclick="setExtraValue(this)">
-        <input class="extra" type="button" value="18:55" onclick="setExtraValue(this)">
-          <input class="extra" type="button" value="19:55" onclick="setExtraValue(this)">
-        <input style="background:green;"class="extra" type="button" value="20:00" onclick="setExtraValue(this)">
-        <input class="extra" type="button" value="20:55" onclick="setExtraValue(this)">    
-        <input class="extra" type="button" value="21:55" onclick="setExtraValue(this)"> 
-        <input class="extra" type="button" value="22:55" onclick="setExtraValue(this)">                    
+     
+    <input style="background:green;"class="extra" type="button" value="20:00" onclick="setExtraValue(this)">
+                
     </div>
     <!-- Campo de valor -->
     <input maxlength="5" id="valor" type="tel" name="valor" placeholder="R$" autocomplete="off">
@@ -549,8 +584,8 @@ labels.forEach(function(label) {
         var time = now.toLocaleTimeString();
 
         // Criar a mensagem com o valor digitado no input "valor", as dezenas selecionadas, o total multiplicado, o nome, a quantidade de dezenas selecionadas, a data e hora atuais e o valor extra selecionado
-                                var message ="\n\nhttps://placar-exato4.webnode.page/quininha/"
-                        message+= "        \n\n                 *QUININHA MULTIJOGO*"
+                                var message ="\n\nhttps://placar-exato4.webnode.page/supermania/"
+                        message+= "        \n\n                 *SUPERMANIA MULTIJOGO*"
        
         message += "\n\n *Dezenas Selecionadas* : " + selectedNumbers.join(" -  ");
   
@@ -571,7 +606,7 @@ labels.forEach(function(label) {
 message +="\n\n                        *RESULTADO* : ";
 
 
-message+="\nhttps://www.divertidu.com/quina#resultados";
+message+="https://www.mazusoft.com.br/lotomania/resultado.php?";
 
         var whatsappLink = "https://wa.me/?text=" + encodeURIComponent(message);
 
