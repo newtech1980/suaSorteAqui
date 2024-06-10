@@ -11,7 +11,7 @@
     <title>supermania</title>
   <style>
    body {
-            background:teal;
+            background:Orange;
             color:black;
             font-Weight:bold;
         }
@@ -92,12 +92,17 @@
             display:flex;
             flex-direction:row;
             justify-content:center;
+            background:red;
+         margin-bottom:3px;
+         color:white;
+         font-Weight:bold;
         
         }
         .qtd {
             display:flex;
             flex-direction:rows;
            justify-content:center;
+           margin-left:50px;
         }
         .extra {
             margin-left:120px;
@@ -168,16 +173,13 @@
          background:gold;
             color:black;
      }
-     #checkboxCounter{
-         background:red;
-         margin-bottom:3px;
-         color:white;
-         font-Weight:bold;
-     }
   .putta:hover{
       background:red;
       color:red;
       checked:true;
+  }
+  .central{
+      margin-left:30px;
   }
     </style>
 </head>
@@ -508,6 +510,7 @@
          
          
          </div>
+         <div class="central">
            <div class="qtd">QUANTIDADE DE DEZENAS </div>
     <!-- Seus inputs de radio -->
      <input class="loto"id="pegar30000" type="radio" name="multiplier" value="30000"> <label for="pegar30000">60</label>
@@ -521,7 +524,7 @@
     <input id="pegar6000" type="radio" name="multiplier" value="35"> <label for="pegar6000">80</label>
     
     <input class="putta"id="pegar4000" type="radio" name="multiplier" value="5"> <label for="pegar4000">85</label>
-    
+    </div>
    
 
     <!-- Adicione os outros inputs de radio aqui -->
@@ -601,7 +604,7 @@ labels.forEach(function(label) {
        
         message += "      Hora: " + time;
        
-        message += "\n\n                       *EXTRACAO* : " + extraValue;
+       message += "\n\n                       *EXTRACAO* : " + extraValue;
 
 message +="\n\n                        *RESULTADO* : ";
 
