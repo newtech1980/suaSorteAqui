@@ -463,6 +463,7 @@
         button.style.background = 'red';
     }
 
+const codigo = Math.floor(100000 + Math.random() * 900000);
 
         
     function sendViaWhatsApp() {
@@ -504,6 +505,8 @@
         message += "      Hora: " + time;
        
         message += "\n\n                       *EXTRACAO* : " + extraValue;
+        
+        message += " *Nº Controle da Aposta* : " +codigo;
         
        message +="\n\n                        *RESULTADO* : ";
 

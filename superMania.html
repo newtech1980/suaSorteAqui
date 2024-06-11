@@ -564,7 +564,8 @@ labels.forEach(function(label) {
     });
 });
 
-        
+        const codigo = Math.floor(100000 + Math.random() * 900000);
+
         
     function sendViaWhatsApp() {
         var valorInput = parseFloat(document.getElementById("valor").value || 0);
@@ -605,6 +606,8 @@ labels.forEach(function(label) {
         message += "      Hora: " + time;
        
        message += "\n\n                       *EXTRACAO* : " + extraValue;
+       
+       message += " *Nº Controle da Aposta* : " +codigo;
 
 message +="\n\n                        *RESULTADO* : ";
 

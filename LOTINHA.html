@@ -336,6 +336,8 @@ value="SENINHA"></a>
 <script>
       var extraValue = ""; // Variável global para armazenar o valor extra selecionado
 
+const codigo = Math.floor(100000 + Math.random() * 900000);
+
     function setExtraValue(button) {
         extraValue = button.value;
         var buttons = document.querySelectorAll('.extra');
@@ -352,7 +354,6 @@ labels.forEach(function(label) {
         label.classList.toggle('selected');
     });
 });
-
         
     function sendViaWhatsApp() {
         var valorInput = parseFloat(document.getElementById("valor").value || 0);
@@ -375,6 +376,9 @@ labels.forEach(function(label) {
         var time = now.toLocaleTimeString();
 
         // Criar a mensagem com o valor digitado no input "valor", as dezenas selecionadas, o total multiplicado, o nome, a quantidade de dezenas selecionadas, a data e hora atuais e o valor extra selecionado
+        
+        
+    
                                 var message ="\n\nhttps://placar-exato4.webnode.page/lotinha/"
                         message+= "        \n\n                 *LOTINHA MULTIJOGO*"
        
@@ -393,6 +397,8 @@ labels.forEach(function(label) {
         message += "      Hora: " + time;
        
         message += "\n\n                       *EXTRACAO* : " + extraValue;
+
+message += " *Nº Controle da Aposta* : " +codigo;
 
   message +="\n\n                        *RESULTADO* : "
 
