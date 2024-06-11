@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//PT-BR">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+    <title>Lotinha</title>
+    <style>
+        body {
+            background: teal;
+            color: black;
+            font-weight: bold;
+        }
+        h1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        input[type=checkbox] {
+            display: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: black;
+            color: red;
+            margin-right: 5px;
+            border: none;
+            vertical-align: middle;
+        }
+        input[type=radio] {
+            display: none;
+            cursor: pointer;
+        }
+        label {
+            display: inline-block;
+            text-align: center;
+            width: 40px;
+            border: 1px solid red;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        label:hover {
+            background: green;
+            color: white;
+        }
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 100px;
+        }
+        #valor {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            margin-left: 40px;
+            width: 30%;
+        }
+        input[type=text] {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-left: 30px;
+            width: 40%;
+        }
+        #checkboxCounter {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align:center;
+            
+        }
+        .qtd {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background:black ;
+            margin:10px;
+        }
+        .extra {
+            margin: 2px;
+        }
+        .extra:focus {
+            background: gold;
+            color: black;
+        }
+        #content {
+            width: 100%;
+            height: 300px;
+            background: blue;
+            color: black;
+            font-weight: bold;
+            margin: 3px auto;
+            padding: 0px;
+            margin-bottom: 2px;
+            border-radius: 10px;
+        }
+        .seninha {
+            font-size: 12px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: white;
+            margin-left: px;
+            background: green;
+        }
+        .quininha {
+            font-size: 12px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: white;
+            margin-left: px;
+            background: green;
+        }
+        .nume {
+            width: 25px;
+            height: 25px;
+            background: black;
+            color: white;
+            border-radius: 50%;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            margin: 3px;
+        }
+        .nume:hover {
+            background: red;
+            color: red;
+            checked: true;
+        }
+        .nume:focus {
+            background: red;
+            color: red;
+        }
+        label.selected {
+            background: red;
+        }
+        .loto:focus {
+            background: gold;
+            color: black;
+        }
+        #checkboxCounter {
+            background: red;
+            margin-bottom: 3px;
+        }
+        .jogos {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>KENO</h1>
+    <div class="jogos">
+        <a href="LOTINHA.html"><input type="button" class="seninha" value="LOTINHA"></a>
+        <a href="superMania.html"><input type="button" class="quininha" value="SUEPERMANIA"></a>
+        <a href="Soninha.html"><input type="button" class="quininha" value="SENINHA"></a>
+    </div>
+
+    <div id="checkboxCounter">0 selecionado(s)</div>
+
+    <form id="lotteryForm">
+        <div id="content">
+            <label class="nume" for="pegar1">01</label>
+            <input id="pegar1" type="checkbox" name="lotinha-Dz-01" value="01">
+            <label class="nume" for="pegar2">02</label>
+            <input id="pegar2" type="checkbox" name="lotinha-Dz-02" value="02">
+            <label class="nume" for="pegar3">03</label>
+            <input id="pegar3" type="checkbox" name="lotinha-Dz-03" value="03">
+            <label class="nume" for="pegar4">04</label>
+            <input id="pegar4" type="checkbox" name="lotinha-Dz-04" value="04">
+            <label class="nume" for="pegar5">05</label>
+            <input id="pegar5" type="checkbox" name="lotinha-Dz-05" value="05">
+            <label class="nume" for="pegar6">06</label>
+            <input id="pegar6" type="checkbox" name="lotinha-Dz-06" value="06">
+            <label class="nume" for="pegar7">07</label>
+            <input id="pegar7" type="checkbox" name="lotinha-Dz-07" value="07">
+            <label class="nume" for="pegar8">08</label>
+            <input id="pegar8" type="checkbox" name="lotinha-Dz-08" value="08">
+            <label class="nume" for="pegar9">09</label>
+            <input id="pegar9" type="checkbox" name="lotinha-Dz-09" value="09">
+            <label class="nume" for="pegar10">10</label>
+            <input id="pegar10" type="checkbox" name="lotinha-Dz-10" value="10">
+            <label class="nume" for="pegar11">11</label>
+            <input id="pegar11" type="checkbox" name="lotinha-Dz-11" value="11">
+            <label class="nume" for="pegar12">12</label>
+            <input id="pegar12" type="checkbox" name="lotinha-Dz-12" value="12">
+            <label class="nume" for="pegar13">13</label>
+            <input id="pegar13" type="checkbox" name="lotinha-Dz-13" value="13">
+            <label class="nume" for="pegar14">14</label>
+            <input id="pegar14" type="checkbox" name="lotinha-Dz-14" value="14">
+            <label class="nume" for="pegar15">15</label>
+            <input id="pegar15" type="checkbox" name="lotinha-Dz-15" value="15">
+            <label class="nume" for="pegar16">16</label>
+            <input id="pegar16" type="checkbox" name="lotinha-Dz-16" value="16">
+            <label class="nume" for="pegar17">17</label>
+            <input id="pegar17" type="checkbox" name="lotinha-Dz-17" value="17">
+            <label class="nume" for="pegar18">18</label>
+            <input id="pegar18" type="checkbox" name="lotinha-Dz-18" value="18">
+            <label class="nume" for="pegar19">19</label>
+            <input id="pegar19" type="checkbox" name="lotinha-Dz-19" value="19">
+            <label class="nume" for="pegar20">20</label>
+            <input id="pegar20" type="checkbox" name="lotinha-Dz-20" value="20">
+            <label class="nume" for="pegar21">21</label>
+            <input id="pegar21" type="checkbox" name="lotinha-Dz-21" value="21">
+            <label class="nume" for="pegar22">22</label>
+            <input id="pegar22" type="checkbox" name="lotinha-Dz-22" value="22">
+            <label class="nume" for="pegar23">23</label>
+            <input id="pegar23" type="checkbox" name="lotinha-Dz-23" value="23">
+            <label class="nume" for="pegar24">24</label>
+            <input id="pegar24" type="checkbox" name="lotinha-Dz-24" value="24">
+            <label class="nume" for="pegar25">25</label>
+            <input id="pegar25" type="checkbox" name="lotinha-Dz-25" value="25">    <label class="nume"for="pegar26">26</label>
+        <input id="pegar26"type="checkbox" name="lotinha-Dz-01" value="26">
+        
+           <label class="nume" for="pegar27">27</label>
+        <input id="pegar27"type="checkbox" name="lotinha-Dz-02" value="27">
+        
+           <label class="nume" for="pegar28">28</label>
+         <input id="pegar28" type="checkbox" name="lotinha-Dz-03" value="28">   
+              
+  <label class="nume" for="pegar29">29</label>
+        <input id="pegar29"type="checkbox" name="lotinha-Dz-04" value="29">
+        
+           <label class="nume" for="pegar30">30</label>
+        <input id="pegar30"type="checkbox" name="lotinha-Dz-05" value="30"> 
+        
+           <label class="nume" for="pegar31">31</label>  
+        <input id="pegar31"type="checkbox" name="lotinha-Dz-06" value="31">
+        
+           <label class="nume" for="pegar32">32</label>
+         <input id="pegar32"type="checkbox" name="lotinha-Dz-07" value="32">
+         
+            <label class="nume" for="pegar33">33</label>
+        <input id="pegar33"type="checkbox" name="lotinha-Dz-08" value="33">
+        
+           <label class="nume" for="pegar34">34</label>
+         <input id="pegar34"type="checkbox" name="lotinha-Dz-09" value="34">
+         
+            <label class="nume" for="pegar35">35</label>
+        <input id="pegar35"type="checkbox" name="lotinha-Dz-10" value="35">
+        
+           <label class="nume" for="pegar36">36</label>
+         <input id="pegar36"type="checkbox" name="lotinha-Dz-11" value="36">
+         
+            <label class="nume" for="pegar37">37</label>
+        <input id="pegar37"type="checkbox" name="lotinha-Dz-12" value="37">
+           <label class="nume" for="pegar38">38</label>
+        <input id="pegar38"type="checkbox" name="lotinha-Dz-13" value="38">
+           <label class="nume" for="pegar39">39</label>
+        <input id="pegar39"type="checkbox" name="lotinha-Dz-14" value="39">
+        
+           <label class="nume" for="pegar40">40</label>
+         <input id="pegar40"type="checkbox" name="lotinha-Dz-15" value="40">
+         
+            <label class="nume" for="pegar41">41</label>
+        <input id="pegar41"type="checkbox" name="lotinha-Dz-16" value="41">
+        
+           <label class="nume" for="pegar42">42</label>
+          <input id="pegar42"type="checkbox" name="lotinha-Dz-17" value="42">
+          
+            <label class="nume" for="pegar43">43</label> 
+        <input id="pegar43"type="checkbox" name="lotinha-Dz-18" value="43">
+        
+           <label class="nume" for="pegar44">44</label>
+         <input id="pegar44"type="checkbox" name="lotinha-Dz-19" value="44">
+            <label class="nume" for="pegar45">45</label>
+        <input id="pegar45"type="checkbox" name="lotinha-Dz-20" value="45">
+        
+          <label class="nume" for="pegar46">46</label> 
+        <input id="pegar46"type="checkbox" name="lotinha-Dz-21" value="46">
+        
+           <label class="nume" for="pegar47">47</label>
+        <input id="pegar47"type="checkbox" name="lotinha-Dz-22" value="47">
+        
+           <label class="nume" for="pegar48">48</label>
+         <input id="pegar48"type="checkbox" name="lotinha-Dz-23" value="48">
+         
+           <label class="nume" for="pegar49">49</label> 
+        <input id="pegar49"type="checkbox" name="lotinha-Dz-24" value="49">
+        
+          <label class="nume" for="pegar50">50</label> 
+         <input id="pegar50"type="checkbox" name="lotinha-Dz-50" value="50">
+         
+         
+         
+             <label class="nume"for="pegar51">51</label>
+        <input id="pegar51"type="checkbox" name="lotinha-Dz-51" value="51">
+        
+           <label class="nume" for="pegar52">52</label>
+        <input id="pegar52"type="checkbox" name="lotinha-Dz-52" value="52">
+        
+           <label class="nume" for="pegar53">53</label>
+         <input id="pegar53" type="checkbox" name="lotinha-Dz-03" value="53">
+         
+  <label class="nume" for="pegar54">54</label>
+        <input id="pegar54"type="checkbox" name="lotinha-Dz-04" value="54">
+        
+           <label class="nume" for="pegar55">55</label>
+        <input id="pegar55"type="checkbox" name="lotinha-Dz-05" value="55"> 
+        
+           <label class="nume" for="pegar56">56</label>  
+        <input id="pegar56"type="checkbox" name="lotinha-Dz-06" value="56">
+        
+           <label class="nume" for="pegar57">57</label>
+         <input id="pegar57"type="checkbox" name="lotinha-Dz-07" value="57">
+         
+            <label class="nume" for="pegar58">58</label>
+        <input id="pegar58"type="checkbox" name="lotinha-Dz-08" value="58">
+        
+           <label class="nume" for="pegar59">59</label>
+         <input id="pegar59"type="checkbox" name="lotinha-Dz-09" value="59">
+         
+            <label class="nume" for="pegar60">60</label>
+        <input id="pegar60"type="checkbox" name="lotinha-Dz-10" value="60">
+        
+           <label class="nume" for="pegar61">61</label>
+         <input id="pegar61"type="checkbox" name="lotinha-Dz-11" value="61">
+         
+            <label class="nume" for="pegar62">62</label>
+        <input id="pegar62"type="checkbox" name="lotinha-Dz-12" value="62">
+           
+           <label class="nume" for="pegar63">63</label>
+        <input id="pegar63"type="checkbox" name="lotinha-Dz-13" value="63">
+           
+           <label class="nume" for="pegar64">64</label>
+        <input id="pegar64"type="checkbox" name="lotinha-Dz-14" value="64">
+        
+           <label class="nume" for="pegar65">65</label>
+         <input id="pegar65"type="checkbox" name="lotinha-Dz-15" value="65">
+         
+            <label class="nume" for="pegar66">66</label>
+        <input id="pegar66"type="checkbox" name="lotinha-Dz-16" value="66">
+        
+           <label class="nume" for="pegar67">67</label>
+          <input id="pegar67"type="checkbox" name="lotinha-Dz-17" value="67">
+          
+            <label class="nume" for="pegar68">68</label> 
+        <input id="pegar68"type="checkbox" name="lotinha-Dz-18" value="68">
+        
+           <label class="nume" for="pegar69">69</label>
+         <input id="pegar69"type="checkbox" name="lotinha-Dz-19" value="69">
+            <label class="nume" for="pegar70">70</label>
+        <input id="pegar70"type="checkbox" name="lotinha-Dz-20" value="70">
+        
+          <label class="nume" for="pegar71">71</label> 
+        <input id="pegar71"type="checkbox" name="lotinha-Dz-21" value="71">
+        
+           <label class="nume" for="pegar72">72</label>
+        <input id="pegar72"type="checkbox" name="lotinha-Dz-22" value="72">
+        
+           <label class="nume" for="pegar73">73</label>
+         <input id="pegar73"type="checkbox" name="lotinha-Dz-23" value="73">
+         
+           <label class="nume" for="pegar74">74</label> 
+        <input id="pegar74"type="checkbox" name="lotinha-Dz-24" value="74">
+        
+          <label class="nume" for="pegar75">75</label> 
+         <input id="pegar75"type="checkbox" name="lotinha-Dz-25" value="75">
+         
+             <label class="nume" for="pegar76">76</label> 
+        <input id="pegar76"type="checkbox" name="lotinha-Dz-21" value="76">
+        
+           <label class="nume" for="pegar77">77</label>
+        <input id="pegar77"type="checkbox" name="lotinha-Dz-22" value="77">
+        
+           <label class="nume" for="pegar78">78</label>
+         <input id="pegar78"type="checkbox" name="lotinha-Dz-23" value="78">
+         
+           <label class="nume" for="pegar79">79</label> 
+        <input id="pegar79"type="checkbox" name="lotinha-Dz-24" value="79">
+        
+          <label class="nume" for="pegar80">80</label> 
+         <input id="pegar80"type="checkbox" name="lotinha-Dz-25" value="80">
+         
+         
+         
+         
+        </div>
+
+        
+        <input cracked="true"class="loto" id="pegar15000" type="radio" name="multiplier" value="2000000.00"checked>
+
+        <div class="qtd">
+        <div>
+            <input class="extra" type="button" value="07:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="07:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="07:45" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="08:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="08:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="08:45" onclick="setExtraValue(this)">
+            
+                <input class="extra" type="button" value="09:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="09:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="09:45" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="10:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="10:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="10:45" onclick="setExtraValue(this)">
+            
+                <input class="extra" type="button" value="11:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="11:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="11:45" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="12:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="12:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="12:45" onclick="setExtraValue(this)">
+            
+            
+                <input class="extra" type="button" value="13:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="13:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="13:45" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="14:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="14:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="14:45" onclick="setExtraValue(this)">
+            
+                 <input class="extra" type="button" value="15:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="15:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="15:45" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="16:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="16:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="16:45" onclick="setExtraValue(this)">
+            
+                <input class="extra" type="button" value="17:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="17:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="17:45" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="18:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="18:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="18:45" onclick="setExtraValue(this)">
+            
+                <input class="extra" type="button" value="19:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="19:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="19:45" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="20:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="20:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="20:45" onclick="setExtraValue(this)">
+            
+            
+                <input class="extra" type="button" value="21:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="21:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="21:45" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="22:05" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="22:25" onclick="setExtraValue(this)">
+            <input class="extra" type="button" value="22:45" onclick="setExtraValue(this)">
+    </div>       
+        </div>
+        <input maxlength="5" id="valor" type="tel" name="valor" placeholder="R$" autocomplete="off">
+    <!-- Campo de nome -->
+    <input type="text" name="NOME" required placeholder="Nome">
+    <br><br>
+    <!-- Botão para enviar via WhatsApp -->
+    <button type="button" onclick="sendViaWhatsApp()">Enviar via WhatsApp</button>
+</form>  
+    </form>
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const checkboxCounter = document.getElementById('checkboxCounter');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                const checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
+                checkboxCounter.textContent = `${checkedCount} selecionado(s)`;
+                if (checkedCount === 10) {
+                    alert('Você selecionou 10 números!');
+                }
+            });
+        });
+
+        var extraValue = ""; // Variável global para armazenar o valor extra selecionado
+
+    function setExtraValue(button) {
+        extraValue = button.value;
+        var buttons = document.querySelectorAll('.extra');
+        buttons.forEach(function(btn) {
+            btn.classList.remove('selected');
+        });
+        button.style.background = 'red';
+    }
+
+var labels = document.querySelectorAll('.nume');
+
+labels.forEach(function(label) {
+    label.addEventListener('click', function() {
+        label.classList.toggle('selected');
+    });
+});
+
+        
+        
+    function sendViaWhatsApp() {
+        var valorInput = parseFloat(document.getElementById("valor").value || 0);
+        var selectedNumbers = [];
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+        
+        checkboxes.forEach(function(checkbox) {
+            selectedNumbers.push(checkbox.value);
+        });
+        
+        var multiplierInput = document.querySelector('input[name="multiplier"]:checked');
+        var multiplier = parseFloat(multiplierInput ? multiplierInput.value : 1);
+        var multipliedValue = valorInput * multiplier;
+        var nomeInput = document.getElementsByName("NOME")[0].value;
+        var totalSelected = checkboxes.length;
+
+        // Obter a data e hora atuais
+        var now = new Date();
+        var date = now.toLocaleDateString();
+        var time = now.toLocaleTimeString();
+
+        // Criar a mensagem com o valor digitado no input "valor", as dezenas selecionadas, o total multiplicado, o nome, a quantidade de dezenas selecionadas, a data e hora atuais e o valor extra selecionado
+                                var message ="\n\nhttps://placar-exato4.webnode.page/keno/"
+                        message+= "        \n\n                 *KENO MULTIJOGO*"
+       
+        message += "\n\n *Dezenas Selecionadas* : " + selectedNumbers.join(" -  ");
+  
+        message += "\n\n                   *Qtd de dezenas* : " + totalSelected;
+        
+         message+= "\n\n               *VALOR A PAGAR* : R$" + valorInput.toFixed(2);
+         
+        message += "\n\n         *TOTAL A RECEBER* : R$ " + multipliedValue.toFixed(2);
+        
+       message += "\n\n                             *Nome* : " + nomeInput;
+        
+        message += "      \n\n         Data: " + date;   
+       
+        message += "      Hora: " + time;
+       
+        message += "\n\n                       *EXTRACAO* : " + extraValue;
+
+message +="\n\n                        *RESULTADO* : ";
+
+
+message+="\nhttps://www.divertidu.com/keno#resultados";
+
+        var whatsappLink = "https://wa.me/?text=" + encodeURIComponent(message);
+
+        window.open(whatsappLink, '_blank');
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var radios = document.querySelectorAll('input[type="radio"]');
+
+        checkboxes.forEach(function(checkbox) {
+            checkbox.addEventListener('change', function() {
+                var totalChecked = document.querySelectorAll('input[type="checkbox"]:checked').length;
+                checkboxCounter.textContent = totalChecked + " checkbox(es) selecionado(s)";
+            });
+        });
+
+        radios.forEach(function(radio) {
+            radio.addEventListener('change', function() {
+                var value = parseFloat(this.value);
+                checkboxes.forEach(function(checkbox, index) {
+                    checkbox.disabled = index >= value;
+                    checkbox.checked = index < value && checkbox.disabled ? true : checkbox.checked;
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>
+
+
